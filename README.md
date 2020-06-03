@@ -15,6 +15,7 @@ To use any of these functions, please clone the repo and navigate to example_run
 #----------#
 # Bertrand #
 #----------#
+# The example below follows this problem demo: https://www.youtube.com/watch?v=YrnqUPW96lY
 marginalCost1 = 0
 marginalCost2 = 0
 
@@ -28,6 +29,7 @@ oupt <- equilibriumCompiler(func1 = q1, func2 = q2, # These are the demand funct
 #---------#
 # Cournot #
 #---------#
+# This example below follows this problem demo: https://www.youtube.com/watch?v=An_2r6Ae_28
 marginalCost1 <- 40
 marginalCost2 <- 40
 
