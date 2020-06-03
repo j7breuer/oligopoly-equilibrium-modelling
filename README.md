@@ -43,7 +43,7 @@ oupt <- equilibriumCompiler(func1 = p1, func2 = p2, # These are the inverse dema
 This is solely built out of base-R and will remain so.
 
 ## Code Constraints
-Currently, this code only works on linear demand functions and in a 2 player equilibrium problem.  The demand functions must come in the format of having spaces between each variable in the equation.  Ex: 2x<sub>1</sub>+3x<sub>2</sub> must be in the format of 2x1 +3y2.
+Currently, this code only works on linear demand functions and in a 2 player equilibrium problem.  The demand functions must come in the format of having spaces between each variable in the equation.  Ex: 2x<sub>1</sub>+3x<sub>2</sub> must be in the format of 2x1 +3x2.
 
 ## Author
 J Breuer - j7breuer@gmail.com.  Please reach out with any questions.
