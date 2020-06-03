@@ -2,7 +2,7 @@
 This code started as a fun regex puzzle I was challenging myself with that turned into something potentially useful.  That puzzle was how to derive marginal revenue, best response functions, and output/price equilibrium given demand or inverse demand functions.  The catch was to do this without using any calculus functions in R, only use regex and simple mathematical operators (*/+-).  The processes outlined above use partial derivatives, linear algebra, etc.  In a program such as Matlab, this can be easily done.  In R it can not.  The real puzzle is to use regex to create my own functions to calculate partial derivates, integrate equations, etc.
 
 ### For example:
-Take x^2.  The derivative of x^2 is 2x.  How do you get from x^2 to 2x in R without running a derivative calculator on x^2.  You extract the 2 after the ^ and multiply it by x's coefficient of '1' to get 2.  Paste 2 in front of the base variable 'x' and now you have 2x.
+Take x<sup>2</sup>.  The derivative of x<sup>2</sup> is 2x.  How do you get from x<sup>2</sup> to 2x in R without running a derivative calculator on x<sup>2</sup>.  You extract the 2 after the ^ and multiply it by x's coefficient of '1' to get 2.  Paste 2 in front of the base variable 'x' and now you have 2x.
 
 ## Getting Started
 Using this repository assumes a few prerequisites:
@@ -43,7 +43,7 @@ oupt <- equilibriumCompiler(func1 = p1, func2 = p2, # These are the inverse dema
 This is solely built out of base-R and will remain so.
 
 ## Code Constraints
-Currently, this code only works on linear demand functions and in a 2-game equilibrium problem.  The demand functions must come in the format of having spaces between each variable in the equation.  Ex: 2x+3y must be in the format of 2x +3y.
+Currently, this code only works on linear demand functions and in a 2 player equilibrium problem.  The demand functions must come in the format of having spaces between each variable in the equation.  Ex: 2x<sub>1</sub>+3x<sub>2</sub> must be in the format of 2x1 +3y2.
 
 ## Author
 J Breuer - j7breuer@gmail.com.  Please reach out with any questions.
